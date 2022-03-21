@@ -17,7 +17,7 @@ const Color = ({ rgb, weight, index, hexColor }) => {
 
   return (
     <article
-      className={`color ${index > 7 && 'color-light'}`}
+      className={`color ${index > 12 && 'color-light'}`}
       style={{
         background: `rgb(${bcg})`,
       }}

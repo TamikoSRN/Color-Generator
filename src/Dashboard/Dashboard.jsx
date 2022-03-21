@@ -7,14 +7,15 @@ import Color from "../EventsList/Color"
 export default function Dashboard() {
   const [color, setColor] = useState("");
   const [error, setError] = useState(false);
-  const [list, setList] = useState(new Values("#f15025").all(10));
+  const [list, setList] = useState(new Values("#666666").all(4));
 
   const handleSubmit = (e) => {
       e.preventDefault()
       try{
-          let colors = new Values(color).all(10)
+          let colors = new Values(color).all(4)
           setList(colors) 
           setColor("")
+          setError("")
       }
       catch(error){
           setError(error)
