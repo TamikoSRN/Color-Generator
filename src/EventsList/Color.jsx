@@ -6,6 +6,7 @@ const Color = ({ rgb, weight, index, hexColor }) => {
   const bcg = rgb.join(",");
   rgbToHex(...rgb);
   const hexValue = `#${hexColor}`;
+  const hex = rgbToHex(...rgb)
 
   useEffect(() => {
       const timeOut = setTimeout(() =>{
@@ -16,7 +17,7 @@ const Color = ({ rgb, weight, index, hexColor }) => {
 
   return (
     <article
-      classname={`color${index > 10 && "color-light"}`}
+      className={`color ${index > 7 && 'color-light'}`}
       style={{
         background: `rgb(${bcg})`,
       }}
@@ -28,7 +29,7 @@ const Color = ({ rgb, weight, index, hexColor }) => {
       <p className="percent-value">{weight}%</p>
       <p className="color-value">{hexValue}</p>
       {
-          alert && <p className="alert">Color copied to clipboard!</p>
+          alert && <p className="alert">Color copied into the clipboard!</p>
       }
     </article>
   );

@@ -13,21 +13,30 @@
 
 input{
     border-color: transparent; /*deje la cajita transparente :3*/
-    padding: 0.5rem 1rem; /*Le di padding interno al input, altura / anchura*/
+    padding: 0.45rem 1rem; /*Le di padding interno al input, altura / anchura*/
     font-size: 1.2rem;
-    border-top-left-radius: 0.25rem; /*Hago menos pinchudos los bordes a la izquierda*/
-    border-bottom-left-radius: 0.25rem;
 }
 
+input:focus { 
+    outline: none !important;
+    box-shadow: 0 0 10px hsl(205, 70%, 75%);
+ }
+
 .btn {
-    background: hsl(205, 78%, 60%);
-    padding: 0.5rem 1rem; /*Dejo el boton igual al input*/
+    background: hsl(205, 70%, 75%);
+    padding: 0.50rem 1rem; /*Dejo el boton igual al input*/
     font-size: 1.25rem;
     border-color: transparent; /*IMPORTANTE para que cualquier boton se vea lindo*/
     text-transform: capitalize; /*Mayuscula a la primer letra de cada palabra*/
     color: #fff;
     cursor: pointer; /*Hace que el mouse se ponga como manito*/
+    border-top-right-radius: 0.35rem; /*Hago menos pinchudos los bordes a la izquierda*/
+    border-bottom-right-radius: 0.10rem;
 }
+
+.btn:active {
+    transform: translateY(0.5px);
+  }
 
 input.error {
     border: 2px solid hsl(360, 67%, 44%);
@@ -48,26 +57,33 @@ input.error {
 }
 
 .percent-value{
-    margin-bottom: 0;
     color: hsl(209, 61%, 16%);
+    text-align: center;
 }
 
 .color-value{
-    color: hsl(209, 61%, 16%);
-    margin-bottom: 0;
-}
-
-.color-light .color-value {
-    color: #fff;
-}
-
-.color-light .percent-value{
-    color: #fff;
+    color: hsl(209, 61%, 16%);   ;
+    margin-top: 44%;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .alert{
     text-transform: uppercase;
-    font-size: 0.85rem;
-    margin-top: 0.5rem;
-    padding: 1rem;
+    font-size: 0.80rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: hsl(209, 61%, 16%);
+}
+
+.color-light .color-value {
+    color: #EAEAE9;
+}
+
+.color-light .percent-value{
+    color: #EAEAE9;
+}
+
+.color-light .alert{
+    color: #EAEAE9;
 }

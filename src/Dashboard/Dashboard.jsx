@@ -7,13 +7,14 @@ import Color from "../EventsList/Color"
 export default function Dashboard() {
   const [color, setColor] = useState("");
   const [error, setError] = useState(false);
-  const [list, setList] = useState(new Values("#2c2e3b").all(10));
+  const [list, setList] = useState(new Values("#f15025").all(10));
 
   const handleSubmit = (e) => {
       e.preventDefault()
       try{
           let colors = new Values(color).all(10)
           setList(colors) 
+          setColor("")
       }
       catch(error){
           setError(error)
@@ -24,14 +25,14 @@ export default function Dashboard() {
   return (
     <>
       <section className="container">
-        <h3>Tamiko's colors</h3>
+        <h3>Tami-kolors</h3>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
             value={color}
             onChange={(e) => setColor(e.target.value)}
             className={`${error ? "error" : null}`}
-            placeholder="#2e2c3b"
+            placeholder="Search for your colors here!"
           />
           <button className="btn" type="submit">
             Submit your color
