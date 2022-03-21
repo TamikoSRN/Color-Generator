@@ -1,0 +1,73 @@
+.container {
+    display: flex; /*Pone en "linea" los elementos*/
+    height: 100px;
+    padding-left: 2rem; /*Separo del borde de la pantalla todo el container*/
+    text-align: center;  /*Con estas dos puedo alinear cualquier elemento*/
+    align-items: center; /*Con estas dos puedo alinear cualquier elemento*/
+}
+
+.container h3 { /*Gracias a esto puedo modificar los elementos hijos (en este caso h3) dentro de otro elemento padre*/
+    margin-bottom: 0; /*Con estos margenes puedo alinear como me guste, en este caso deje el texto alineado*/
+    margin-right: 2rem;
+}
+
+input{
+    border-color: transparent; /*deje la cajita transparente :3*/
+    padding: 0.5rem 1rem; /*Le di padding interno al input, altura / anchura*/
+    font-size: 1.2rem;
+    border-top-left-radius: 0.25rem; /*Hago menos pinchudos los bordes a la izquierda*/
+    border-bottom-left-radius: 0.25rem;
+}
+
+.btn {
+    background: hsl(205, 78%, 60%);
+    padding: 0.5rem 1rem; /*Dejo el boton igual al input*/
+    font-size: 1.25rem;
+    border-color: transparent; /*IMPORTANTE para que cualquier boton se vea lindo*/
+    text-transform: capitalize; /*Mayuscula a la primer letra de cada palabra*/
+    color: #fff;
+    cursor: pointer; /*Hace que el mouse se ponga como manito*/
+}
+
+input.error {
+    border: 2px solid hsl(360, 67%, 44%);
+}
+
+.colors{
+    min-height: calc(100vh - 100px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(233.33px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(96px), 1fr);
+}
+
+.color{
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: none;
+}
+
+.percent-value{
+    margin-bottom: 0;
+    color: hsl(209, 61%, 16%);
+}
+
+.color-value{
+    color: hsl(209, 61%, 16%);
+    margin-bottom: 0;
+}
+
+.color-light .color-value {
+    color: #fff;
+}
+
+.color-light .percent-value{
+    color: #fff;
+}
+
+.alert{
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+}
