@@ -3,6 +3,7 @@ import { useState } from "react";
 import Values from "values.js";
 import "./Dashboard.css";
 import Color from "../EventsList/Color"
+import SaintQuartz from "../img/saint_quartz.png"
 
 export default function Dashboard() {
   const [color, setColor] = useState("");
@@ -26,6 +27,7 @@ export default function Dashboard() {
   return (
     <>
       <section className="container">
+      <img src={SaintQuartz} className="SQ" alt="" />
         <h3>Tami-kolors</h3>
         <form onSubmit={handleSubmit}>
           <input

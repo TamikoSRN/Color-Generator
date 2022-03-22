@@ -11,7 +11,7 @@ const Color = ({ rgb, weight, index, hexColor }) => {
   useEffect(() => {
       const timeOut = setTimeout(() =>{
           setAlert(false)
-      }, 1500)
+      }, 1200)
       return() => clearTimeout(timeOut)
   }, [alert])
 

@@ -1,7 +1,7 @@
 .container {
   display: flex; /*Pone en "linea" los elementos*/
   height: 100px;
-  padding-left: 2rem; /*Separo del borde de la pantalla todo el container*/
+  padding-left: 0.8rem; /*Separo del borde de la pantalla todo el container*/
   text-align: center; /*Con estas dos puedo alinear cualquier elemento*/
   align-items: center; /*Con estas dos puedo alinear cualquier elemento*/
 }
@@ -88,4 +88,9 @@ input.error {
 
 .color-light .alert {
   color: #eaeae9;
+}
+
+.SQ {
+  width: 5.5rem;
+  margin-right: 0.8rem;
 }
