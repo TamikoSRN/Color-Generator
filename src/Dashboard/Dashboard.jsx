@@ -41,6 +41,7 @@ export default function Dashboard() {
             Submit your color
           </button>
         </form>
+        {/* <label>Give some color to your life and projects!</label> */}
       </section>
       <section className="colors">
         {list.map((color, index) => {

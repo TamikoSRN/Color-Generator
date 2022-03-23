@@ -6,7 +6,6 @@ const Color = ({ rgb, weight, index, hexColor }) => {
   const bcg = rgb.join(",");
   rgbToHex(...rgb);
   const hexValue = `#${hexColor}`;
-  const hex = rgbToHex(...rgb)
 
   useEffect(() => {
       const timeOut = setTimeout(() =>{

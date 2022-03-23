@@ -10,7 +10,26 @@
   /*Gracias a esto puedo modificar los elementos hijos (en este caso h3) dentro de otro elemento padre*/
   margin-bottom: 0; /*Con estos margenes puedo alinear como me guste, en este caso deje el texto alineado*/
   margin-right: 2rem;
+  background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: 700;
 }
+
+/* label {
+  font-size: 2.7rem;
+  margin-left: 3.8rem;
+  margin-bottom: 0px; */
+  /*PARA HACER MULTICOLOR TEXTO*/
+  /* background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: 600;
+} */
 
 input {
   border-color: transparent; /*deje la cajita transparente :3*/
